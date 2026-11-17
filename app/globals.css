@@ -1,0 +1,97 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #06050a;
+    color: #faf9ff;
+    overflow-x: clip;
+    scrollbar-width: thin;
+    scrollbar-color: #9333ea #06050a;
+  }
+
+  body {
+    background-color: #06050a;
+    color: #faf9ff;
+    overflow-x: clip;
+    overscroll-behavior-y: none;
+  }
+
+  ::selection {
+    background-color: rgba(168, 85, 247, 0.45);
+    color: #ffffff;
+  }
+}
+
+/* Custom vertical & horizontal scrollbars in Miami banafsh twilight theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #06050a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #9333ea 0%, #fb7185 100%);
+  border-radius: 9999px;
+  border: 2px solid #06050a;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: linear-gradient(90deg, #9333ea 0%, #fb7185 100%);
+  border-radius: 9999px;
+  border: 1.5px solid #06050a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #a855f7 0%, #fda4af 100%);
+}
+
+::-webkit-scrollbar-corner {
+  background: #06050a;
+}
+
+.vice-scroll-x {
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(192, 132, 252, 0.6) rgba(255, 255, 255, 0.04);
+}
+
+.vice-scroll-x::-webkit-scrollbar {
+  height: 4px;
+}
+
+.vice-scroll-x::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 9999px;
+}
+
+.vice-scroll-x::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #9333ea 0%, #fb7185 100%);
+  border-radius: 9999px;
+  border: none;
+}
+
+.font-vi {
+  font-family: var(--font-vi), var(--font-display), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+.font-sans {
+  font-family: var(--font-sans), sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+.text-balance {
+  text-wrap: balance;
+}

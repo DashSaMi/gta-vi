@@ -1,0 +1,6 @@
+{
+  "name": "LEONIDA SIX — GTA VI Launch Hub",
+  "description": "An interactive Grand Theft Auto VI launch-week experience in Miami banafsh twilight style featuring Rockstar history, a 10-question fan survey, instant email pass, and 1K/2K/4K Vice City poster studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
